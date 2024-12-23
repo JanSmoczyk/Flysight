@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografia i Filmy Dronem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        #portfolio img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        #portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        #about, #contact {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            margin: auto;
+        }
+        #contact input, #contact textarea, #contact button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        #contact button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #contact button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fotografia i Filmy Dronem</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>O mnie</h2>
+    <p>Cześć! Jestem profesjonalnym fotografem i operatorem drona. Specjalizuję się w tworzeniu wyjątkowych ujęć z lotu ptaka, które idealnie oddają piękno świata z innej perspektywy.</p>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div>
+        <img src="zdjecie1.jpg" alt="Zdjęcie 1">
+        <img src="zdjecie2.jpg" alt="Zdjęcie 2">
+        <img src="zdjecie3.jpg" alt="Zdjęcie 3">
+        <img src="zdjecie4.jpg" alt="Zdjęcie 4">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Kontakt</h2>
+    <form action="mailto:twojemail@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Twoje imię" required>
+        <input type="email" name="email" placeholder="Twój email" required>
+        <textarea name="message" rows="5" placeholder="Wiadomość" required></textarea>
+        <button type="submit">Wyślij wiadomość</button>
+    </form>
+    <p>Lub skontaktuj się bezpośrednio: <a href="mailto:twojemail@example.com">twojemail@example.com</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Fotografia i Filmy Dronem. Wszystkie prawa zastrzeżone.</p>
+</footer>
+
+</body>
+</html>
